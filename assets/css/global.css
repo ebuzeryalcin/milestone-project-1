@@ -1,0 +1,94 @@
+/* text  */
+.text-center{
+    text-align: center;
+}
+
+.heading-small{
+
+font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+/*Colors*/
+.bg-dark-blue{
+    background:#062e51;
+
+}
+.bg-light-blue{
+    background: #336ea2;
+}
+
+/*Buttons */
+.btn{
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    background: #336ea2;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.btn-primary:hover{
+    color: #fff;
+    background: #00AEF0;
+}
+.btn-dark{
+    background: #333;
+}
+.btn-dark:hover{
+    color: #333;
+    background: #fff;
+    border: 0.5px solid #333;
+
+}
+
+.btn-block{
+    width: 100%;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.btn-block:hover{
+    background-color: #00AEF0;
+    color: #fff;
+    opacity: 0.8;
+    }
+
+/* FORMS */
+
+.form-group{ /* The div that hides labels and inputs*/
+    padding: 0.25rem 0;
+    
+}
+/*Because my labels are inline I have to give them block element*/
+
+.form-group label{
+    display: block;
+}
+.form-control{
+width: 100%;
+padding: 0.4rem;
+font-size: 1rem;
+resize: none;  /*text area will remain same*/
+border-radius: 5px;  
+}
+
+/* Container created to make h1 and ul stay in the middle of navbar */
+
+.container{
+    max-width: 1100px; /* Yani tam ekranda 100 px üstüne çıkamıycak. */
+    margin: 0 auto; /* Position center in full screen  */
+    
+}
+
+

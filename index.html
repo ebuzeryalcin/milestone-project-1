@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<meta name="keyword" content="HTML,Python,Javascript,">-->
+    <meta name="description" content="Ebuzer Yalcin | Software School" />
+    <!--Links to css folders-->
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--Tablet version-->
+    <link rel="stylesheet" media="(max-width:768px)" href="assets/css/tablet.css"/>
+    <!--Mobile version-->
+    <link rel="stylesheet" media="(max-width:500px)" href="assets/css/mobile.css"/>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet"/>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    
+    <title>Software School</title>
+</head>
+
+<body>
+
+    <!--To create navbar-->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <nav id="navbar">
+                <!--Sahyfanın en önemli başlığı H1 seo için önemli google bootları bu h1lere bakıcak daha sonra önem sıralrına göre h2 h3 h4 h h6 olarak devam edicek  -->
+                <h1 class="heading-small">Ebuzer YALCIN </h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#training">Education</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <!--yeni html semantic etiketleri kullanmayı çalışıyoruz bu sayede bizim seomızda iyi olacak  -->
+
+        <img src="assets/images/profile.png" alt="Butterfly" />
+        <div class="name text-center">
+
+            <h2 class="heading-big">Ebuzer Yalcin</h2>
+            <p>Senior Full Stack Developer</p>
+        </div>
+        <a href="#courses" class="btn btn-primary"> Go to Courses</a>
+    </section>
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Education Plan</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Classroom</h3>
+                <p>Become a Full Stack Developer - Study for 3 months
+
+                </p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Online</h3>
+                <p>Choose your course or courses and start coding from home
+
+                </p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Conference</h3>
+                <p>Feel free to contact me for more details!
+
+                </p>
+            </article>
+        </div>
+    </section>
+    <!--COURSES-->
+    <section id="courses">
+
+        <h3 class="text-center heading-medium">Courses</h3>
+        <div class="container">
+            <div class="courses">
+                <!--COURSE 1-->
+                <div class="course">
+                    <div class="course-image">
+
+                        <img src="assets/images/html.jpg" alt="Python" />
+                        <span>%50 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            HTML, CSS, Javascript and Bootstrap
+
+
+                        </div>
+                        <div class="description">
+                            Begin your journey with Front-End Development to become a Master
+                        </div>
+                        <div class="instruction">Ebuzer Yalcin</div>
+                        <div class="rating">4.8 <i class="far fa-star"></i> | (35.000 Votes)</div>
+
+
+                    </div>
+
+                </div>
+
+                <!--COURSE 2-->
+                <div class="course">
+                    <div class="course-image">
+
+                        <img src="assets/images/python.jpg" alt="Design" />
+                        <span>%60 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Python and MySQL
+
+                        </div>
+                        <div class="description">
+                            Getting started with MySQL in Python
+                        </div>
+                        <div class="instruction">Ebuzer Yalcin</div>
+                        <div class="rating">4.7 <i class="far fa-star"></i> | (25.000 Votes)</div>
+
+
+                    </div>
+
+                </div>
+                <!-- Course 3-->
+                <div class="course">
+                    <div class="course-image">
+
+                        <img src="assets/images/django.jpeg" alt="Graphic" />
+                        <span>%70 Discount</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Build and deploy rich web applications using Django
+
+                        </div>
+                        <div class="description">
+                            Learn the fundamentals of building a full-featured web site using Django
+                        </div>
+                        <div class="instruction">Ebuzer Yalcin</div>
+                        <div class="rating">4.4 <i class="far fa-star"></i> | (10.000 Votes)</div>
+
+
+                    </div>
+
+                </div>
+                </div>
+
+    </section>
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+        <form>
+            <h4 class="text-center heading-medium">Contact Me</h4>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                type="text" 
+                name="name" 
+                class="form-control" 
+                id="name" 
+                placeholder="Name" />
+            </div>
+            <!--Email form part-->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                 type="text" 
+                 name="email" 
+                 class="form-control" 
+                 id="email" 
+                 placeholder="E-mail" />
+            </div>
+                <!-- Message form part-->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                name="message" 
+                class="form-control" 
+                id="message" 
+                rows="5"
+                placeholder="Message..." >
+            </textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block">Send</button>
+        </form>
+        <ul>
+            <li>
+                <a target="_blank" href="http://www.facebook.com/">
+                <i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+                <a target="_blank" href="http://www.twitter.com/">
+                <i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+                <a target="_blank" href="http://www.instagram.com/">
+                <i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+                <a target="_blank" href="http://www.youtube.com/">
+                <i class="fab fa-youtube" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+                <a target="_blank" href="http://www.linkedin.com/">
+                <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+
+        </ul>
+    </div>
+
+         
+    </footer>
+
+</body>
+
+</html>
