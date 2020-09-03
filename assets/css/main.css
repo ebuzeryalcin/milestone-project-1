@@ -188,6 +188,14 @@ height: auto;
         margin-bottom: 0.25rem;
         opacity: 0.6;
     }
+
+    /*MODAL*/
+
+    .btn-secondary{
+        color: #333;
+        background-color: #fff;
+    }
+
     
     /*CONTACT*/
     #contact {
@@ -235,7 +243,7 @@ align-self: center;
     background:  #343a40;
     color: #fff;
     position: relative;
-    height: 400px;
+    height: 470px;
 
 }
 .footer .footer-bottom{
@@ -308,9 +316,6 @@ font-size: 1.2em;
 }
 .footer .footer-content .links ul a:hover{
     color: #fff;
-    margin-left:35px;
-
-
 }
 
 
