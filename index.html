@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--<meta name="keyword" content="HTML,Python,Javascript,">-->
     <meta name="description" content="Ebuzer Yalcin | Software School" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Links to css folders-->
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -16,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap" rel="stylesheet"/>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
-    
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <title>Software School</title>
 </head>
 
@@ -51,48 +52,73 @@
         </div>
         <a href="#courses" class="btn btn-primary"> Go to Courses</a>
     </section>
+
     <section id="training" class="bg-dark-blue">
         <h3 class="text-center heading-medium">Education Plan</h3>
-        <div class="items">
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
+        <ul class="items">
+            <li class="item">
+                <i class="fas fa-home"></i>
                 <h3>Classroom</h3>
                 <p>Become a Full Stack Developer - Study for 3 months
 
                 </p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
+            </li>
+            
+            <li class="item">
+                <i class="fas fa-globe"></i>
                 <h3>Online</h3>
                 <p>Choose your course or courses and start coding from home
 
                 </p>
-            </article>
-            <article class="item">
-                <i class="fa fa-pencil-alt"></i>
+            </li>
+            <li class="item">
+                <i class="fas fa-microphone"></i>
                 <h3>Conference</h3>
                 <p>Feel free to contact me for more details!
 
                 </p>
-            </article>
-        </div>
+            </li>
+        </ul>
     </section>
+    
+            <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+    
     <!--COURSES-->
     <section id="courses">
 
-        <h3 class="text-center heading-medium">Courses</h3>
-        <div class="container">
+        <h3 class="text-center heading-medium" > Courses</h3>
+            <div class="container">
             <div class="courses">
                 <!--COURSE 1-->
                 <div class="course">
                     <div class="course-image">
 
-                        <img src="assets/images/html.jpg" alt="Python" />
+                        <img src="assets/images/html.jpg" alt="Python"  />
                         <span>%50 Discount</span>
                     </div>
                     <div class="course-info">
                         <div class="title">
-                            HTML, CSS, Javascript and Bootstrap
+                            HTML, CSS, Javascript and Bootstrap 
 
 
                         </div>
@@ -101,7 +127,10 @@
                         </div>
                         <div class="instruction">Ebuzer Yalcin</div>
                         <div class="rating">4.8 <i class="far fa-star"></i> | (35.000 Votes)</div>
-
+                        <br>
+                       <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
+                        </button>
 
                     </div>
 
@@ -124,6 +153,10 @@
                         </div>
                         <div class="instruction">Ebuzer Yalcin</div>
                         <div class="rating">4.7 <i class="far fa-star"></i> | (25.000 Votes)</div>
+                         <br>
+                       <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
+                        </button>
 
 
                     </div>
@@ -133,7 +166,7 @@
                 <div class="course">
                     <div class="course-image">
 
-                        <img src="assets/images/django.jpeg" alt="Graphic" />
+                        <img src="assets/images/django2.jpg" alt="Graphic" />
                         <span>%70 Discount</span>
                     </div>
                     <div class="course-info">
@@ -146,18 +179,25 @@
                         </div>
                         <div class="instruction">Ebuzer Yalcin</div>
                         <div class="rating">4.4 <i class="far fa-star"></i> | (10.000 Votes)</div>
+                         <br>
+                      <!--<a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->  
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
+                        </button>
 
 
                     </div>
 
                 </div>
-                </div>
+            </div>
+        </div>
 
     </section>
-    <footer id="contact" class="bg-dark-blue">
+    <!--CONTACT PART-->
+
+    <section id="contact" class="bg-dark-blue">
         <div class="contact-form">
-        <form>
-            <h4 class="text-center heading-medium">Contact Me</h4>
+        <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
+            <h4 class="text-center heading-medium">Contact Us</h4>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input 
@@ -165,7 +205,7 @@
                 name="name" 
                 class="form-control" 
                 id="name" 
-                placeholder="Name" />
+                placeholder="Name" required/>
             </div>
             <!--Email form part-->
             <div class="form-group">
@@ -175,7 +215,7 @@
                  name="email" 
                  class="form-control" 
                  id="email" 
-                 placeholder="E-mail" />
+                 placeholder="E-mail" required/>
             </div>
                 <!-- Message form part-->
             <div class="form-group">
@@ -185,44 +225,104 @@
                 class="form-control" 
                 id="message" 
                 rows="5"
-                placeholder="Message..." >
+                placeholder="Message..." required>
             </textarea>
             </div>
 
             <button type="submit" class="btn btn-block">Send</button>
         </form>
-        <ul>
+<!--
+        <ul class="social-links">
             <li>
-                <a target="_blank" href="http://www.facebook.com/">
+                <a aria-label="This is a link to an external page called Facebook" target="_blank" href="http://www.facebook.com/">
                 <i class="fab fa-facebook" aria-hidden="true"></i></a>
             </li>
 
             <li>
-                <a target="_blank" href="http://www.twitter.com/">
+                <a aria-label="This is a link to an external page called Twitter" target="_blank" href="http://www.twitter.com/">
                 <i class="fab fa-twitter" aria-hidden="true"></i></a>
             </li>
 
             <li>
-                <a target="_blank" href="http://www.instagram.com/">
+                <a aria-label="This is a link to an external page called Instagram" target="_blank" href="http://www.instagram.com/">
                 <i class="fab fa-instagram" aria-hidden="true"></i></a>
             </li>
 
             <li>
-                <a target="_blank" href="http://www.youtube.com/">
+                <a aria-label="This is a link to an external page called Youtube" target="_blank" href="http://www.youtube.com/">
                 <i class="fab fa-youtube" aria-hidden="true"></i></a>
             </li>
 
             <li>
-                <a target="_blank" href="http://www.linkedin.com/">
+                <a aria-label="This is a link to an external page called Linkedin" target="_blank" href="http://www.linkedin.com/">
                 <i class="fab fa-linkedin" aria-hidden="true"></i></a>
             </li>
 
         </ul>
+        -->
+        </div>
+    </section>
+    <!--FOOTER-->
+    <div class="footer">
+    
+ <div class="footer-content">
+
+ <div class="footer-section about">
+ <h1 class="logo-text"><span>Ebuzer</span>Yalcin</h1>
+ <br>
+ <p>Ebuzer is a passionate Full Stack Developer with 5 years of professional experience in teaching programming. </p>
+ <br>
+
+ <div class="contact">
+ <span><i class="fas fa-phone"></i> <a href="tel:+0892019100"> 0892019100</a></span>
+ <br><br>
+ <span><i class="fas fa-envelope"></i> <a href="mailto:soft@dev.edu">soft@dev.edu</a></span>
+  <br><br>
+
+ </div>
+    <div class="socials">
+    <a aria-label="This is a link to an external page called Facebook" target="_blank" href="http://www.facebook.com/">
+    <i class="fab fa-facebook" aria-hidden="true"></i></a>
+
+    <a aria-label="This is a link to an external page called Instagram" target="_blank" href="http://www.instagram.com/">
+    <i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+    <a aria-label="This is a link to an external page called Twitter" target="_blank" href="http://www.twitter.com/">
+    <i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+    <a aria-label="This is a link to an external page called Youtube" target="_blank" href="http://www.youtube.com/">
+    <i class="fab fa-youtube" aria-hidden="true"></i></a>
+
+    <a aria-label="This is a link to an external page called Linkedin" target="_blank" href="http://www.linkedin.com/">
+    <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+ </div>
+ <div class="footer-section links">
+ <h2>Quick Links</h2>
+ <br>
+ <ul>
+ <a href="#home"><li>Home</li></a>
+ <a href="#training"><li>Education</li></a>
+ <a href="#courses"><li>Courses</li></a>
+ <a href="#contact"><li>Contact</li></a>
+
+ 
+ </ul>
+ </div>
+
+
+ </div>
+
+
+<div class="footer-bottom">
+&copy; Designed by Ebuzer Yalcin | <a href="mailto:soft@dev.edu">soft@dev.edu</a>
+</div>
     </div>
 
-         
-    </footer>
-
+    <!--This is Javascript to use Modal in Courses-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -9,9 +9,11 @@
 }
 #training .items{
  flex-direction: column;
+ height: 100vh;
 }
 #training .items .item{
     width: 100%;
+    height: 100vh;
 }
 .courses .course{
     flex-direction: column;

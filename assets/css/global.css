@@ -29,6 +29,7 @@ font-size: 1.25rem;
     border-radius: 7px;
     letter-spacing: 0.5px;
 }
+
 .btn-primary{
     background: #336ea2;
     transition: all .4s ease-in-out;
