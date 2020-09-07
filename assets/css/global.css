@@ -24,10 +24,11 @@ font-size: 1.25rem;
 
 /*Buttons */
 .btn{
-    margin-top: 1.25rem;
+    margin-top: .5rem;
     padding: 0.8rem 3rem;
     border-radius: 7px;
     letter-spacing: 0.5px;
+    margin-bottom: .5rem;
 }
 
 .btn-primary{

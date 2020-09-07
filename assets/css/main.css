@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 
 a{
     /* No underline, if so */
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
 }
 html{
@@ -15,25 +14,26 @@ html{
 }
 /*Navbar*/
 #navbar{ 
-
     color:#fff;
     /*Makes buttons in navbar get together*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.75rem;
-    height: 70%;
+    padding: .5rem 0.75rem;
+    height: 50%;
 }
-#navbar ul{
-    list-style-type: none;
+.navbar-btn{
+    text-decoration: none !important;
+    list-style: none;
     display: flex;
     align-items: center;
+    color:#fff;
 
 }
 
 /* Choosing HTML a */
 
-#navbar ul li a { 
+.button-style { 
     padding: 0.5rem;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -43,7 +43,7 @@ html{
 }
 /*Giving hover effect to navbar buttons*/
 
-#navbar ul li a:hover{
+.button-style:hover{
     background:#336ea2;
     border-radius: 5px;
 }
@@ -87,6 +87,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80%;
 }
 #training .items .item{
     width: 33%;
@@ -94,17 +95,6 @@ html{
     padding: 0.5rem;
     list-style: none;
 }
-/*
-    transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-
-#training .items .item:hover{
-    color: #ff6700;
-    opacity: 0.8;
-}
-*/
 
 #courses{
     color: #333;
@@ -162,29 +152,37 @@ height: auto;
         left: 0;
     }
 
+.discount-span{
+    background: red;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
     /*Title description instructor ve rating styles */
 
-    /*TITLE*/
-    .courses .course .course-info .title{
+    /*TITLE COURSES*/
+    .title{
         letter-spacing: 1.2px;
         font-weight: 700;
         margin-bottom: 0.25rem;
     }
-    /*DESCRIPTION*/
-    .courses .course .course-info .description{
+
+    /*TITLE*/
+    .title-course{
         letter-spacing: 1.2px;
         margin-bottom: 0.25rem;
-        opacity: 0.6;
+        font-weight: 500;
+    }
+
+    /*DESCRIPTION*/
+    .description-course{
+        letter-spacing: 1.2px;
+        margin-bottom: 0.25rem;
+        opacity: 0.8;
     }
     /*INSTRUCTOR*/
-    .courses .course .course-info .instructor{
-        font-size: 0.8rem;
-        margin-bottom: 0.25rem;
-        opacity: 0.6;
-    }
-    /*TITLE*/
-    .courses .course .course-info .title{
-        letter-spacing: 1.2px;
+    .instruction-course{
         margin-bottom: 0.25rem;
         opacity: 0.6;
     }
@@ -297,6 +295,7 @@ padding-top: 20px;
     transition: all.3s;
 }
 /*footer Quick Links Section*/
+
 .footer .footer-content .links{
     padding-top: 35px;
     padding-left: 5px;
