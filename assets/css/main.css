@@ -9,11 +9,12 @@ a{
     text-decoration: none !important;
     color: #fff;
 }
+
 html{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*Navbar*/
-#navbar{ 
+    /*Navbar*/
+#navbar-styling{ 
     color:#fff;
     /*Makes buttons in navbar get together*/
     display: flex;
@@ -22,34 +23,32 @@ html{
     padding: .5rem 0.75rem;
     height: 50%;
 }
-.navbar-btn{
+
+.navbar-btn-right{
     text-decoration: none !important;
     list-style: none;
     display: flex;
     align-items: center;
     color:#fff;
-
 }
 
 /* Choosing HTML a */
-
-.button-style { 
+.button-style-nav { 
     padding: 0.5rem;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
-
 }
-/*Giving hover effect to navbar buttons*/
 
-.button-style:hover{
+/*Giving hover effect to navbar buttons*/
+.button-style-nav:hover{
     background:#336ea2;
     border-radius: 5px;
 }
 
 /*HOME Section*/
-#home{
+#home-button{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,149 +57,79 @@ html{
     border-bottom: 1px solid grey;
     height: 100vh;
 }
-/*image'ın içinde bulunduğu bütün alanı kaplaması için */
 
-#home img{
+/*image'ın içinde bulunduğu bütün alanı kaplaması için */
+#home-button img{
     max-width: 100%;
     height: auto;
     /*eğer  100% verirsen height e göre ovale çevircek*/
     border-radius: 50%;
 }
 
-#home .name h2{
-
+#home-button .name h2{
     margin-bottom: 0.75rem;
 }
-#home .name p{
+
+#home-button .name p{
     opacity: 0.6;
     font-style: italic;
 }
 
-
-/*Training*/
-#training{
+/*education*/
+#education-button{
     color: #fff;
     padding: 1rem;
-    height: 100vh;                          /*?*/
+    height: 100vh;                        
 }
-#training .items{
+
+#education-button .items{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80%;
 }
-#training .items .item{
+
+#education-button .items .item{
     width: 33%;
     text-align: center;
     padding: 0.5rem;
     list-style: none;
 }
 
-#courses{
+#courses-button{
     color: #333;
     padding: 1rem;
-    
 }
-.courses{
+
+.courses-button{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-
 }
-.courses .course{
+
+.courses-button .course{
 display: flex;
 padding: 0.5rem;
 margin-bottom: 0.5rem;
-
-}
-.courses .course a{
-    color: red;
-    border: 1px solid chocolate;
-     padding: .70rem ;
-    font-size: 1rem;
-    text-align: center;
-
-}
-.courses .course a:hover{
-    color:#343a40;
-    border: 1px solid #343a40;
-}
-    /*responsive image*/
-.courses .course .course-image{
-margin-right: 0.5rem;
-position: relative;
-background-size: cover;
-
 }
 
-
-
-.courses .course .course-image img{
-border-radius: 35px;
-border: 1px solid #333;
-width: 100%;
-height: auto;
-    
-    }
-    .courses .course .course-image span {
-        background: red;
-        padding: 0.25rem;
-        color: #fff;
-        border-radius: 4px;
-        position: absolute; /* For position absolute to work position relative needs to be above, which I have */
-        top: 15px;
-        left: 0;
-    }
-
+/*Courses globale koydum*/
 .discount-span{
     background: red;
     color: #fff;
     border-radius: 4px;
 }
 
-
-    /*Title description instructor ve rating styles */
-
-    /*TITLE COURSES*/
-    .title{
-        letter-spacing: 1.2px;
-        font-weight: 700;
-        margin-bottom: 0.25rem;
-    }
-
-    /*TITLE*/
-    .title-course{
-        letter-spacing: 1.2px;
-        margin-bottom: 0.25rem;
-        font-weight: 500;
-    }
-
-    /*DESCRIPTION*/
-    .description-course{
-        letter-spacing: 1.2px;
-        margin-bottom: 0.25rem;
-        opacity: 0.8;
-    }
-    /*INSTRUCTOR*/
-    .instruction-course{
-        margin-bottom: 0.25rem;
-        opacity: 0.6;
-    }
-
     /*MODAL*/
 
-    
     /*CONTACT*/
-    #contact {
-        color: #fff;
-        padding: 1rem;
-        height: 100vh;
-
-    }
-
+#contact-button {
+    color: #fff;
+    padding: 1rem;
+    height: 100vh;
+}
    
-    #contact .contact-form{
-    
+#contact-button .contact-form{
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -208,74 +137,70 @@ height: auto;
     flex-direction: column;
 }
 
-#contact .contact-form ul{
-list-style-type: none;
-display: flex;
-margin-top: 1rem;
-align-self: center;
+#contact-button .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
 }
 
-#contact .contact-form ul li a{
-
+#contact-button .contact-form ul li a{
     padding: 1rem ;
     font-size: 2rem;
     transition: all .4s ease-in-out
-
 }
 
-#contact .contact-form ul li a:hover{
+#contact-button .contact-form ul li a:hover{
     color: #00AEF0;
     opacity: 0.8;
     transform: scale(1.2);
-    }
+}
 
-                            /*Footer*/
-
+/*----------------Footer-------------------*/
 .footer{
-
     background:  #343a40;
     color: #fff;
     position: relative;
     height: 470px;
-
 }
+
 .footer .footer-bottom{
-
-background: #343a40;
-color: #686868;
-height: 50px;
-width: 100%;
-text-align: center;
-position: absolute;
-bottom: 0px;
-left: 0px;
-padding-top: 20px;
-
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
 }
+
 .footer .footer-content{
     height: 350px;
     display: flex;
-
 }
+
 .footer .footer-content .footer-section{
     flex:1;
     padding:25px;
-
 }
+
 .footer .footer-content h1,
 .footer .footer-content h2{
     color: #fff;
 }
+
 .footer .footer-content .about h1 span{
     color: #336ea2;
 }
+
 .footer .footer-content .about .contact .span{
     display: block;
     font-size: 1.1em;
     margin-bottom: 8px;
-
-
 } 
+
 .footer .footer-content .about .socials a{
     border: 1px solid gray;
     width: 45px;
@@ -287,29 +212,123 @@ padding-top: 20px;
     font-size: 1.3em;
     border-radius: 5px;
     transition: all.3s;
-
 }
+
 .footer .footer-content .about .socials a:hover{
     border: 1px solid white;
     color: #fff;
     transition: all.3s;
 }
-/*footer Quick Links Section*/
 
+/*footer Quick Links Section*/
 .footer .footer-content .links{
     padding-top: 35px;
     padding-left: 5px;
 }
 
 .footer .footer-content .links ul a{
-display: block;
-margin-bottom: 10px;
-font-size: 1.2em;
-
-
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
+
 .footer .footer-content .links ul a:hover{
     color: #fff;
 }
 
+/*-----------------------------GLOBAL-------------------------------*/
+/* text  */
+.text-center{
+    text-align: center;
+}
 
+.heading-small{
+font-size: 1.25rem;
+}
+
+.heading-medium{
+    font-size: 1.5rem;
+}
+
+.heading-big{
+    font-size: 1.75rem;
+}
+
+/*Colors*/
+.bg-dark-blue{
+    background:#062e51;
+}
+
+.bg-light-blue{
+    background: #336ea2;
+}
+
+/*Buttons */
+.btn{
+    margin-top: .5rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    margin-bottom: .5rem;
+}
+
+.btn-primary{
+    background: #336ea2;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background: #00AEF0;
+}
+
+.btn-dark{
+    background: #333;
+}
+
+.btn-dark:hover{
+    color: #333;
+    background: #fff;
+    border: 0.5px solid #333;
+}
+
+.btn-block{
+    width: 100%;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.btn-block:hover{
+    background-color: #00AEF0;
+    color: #fff;
+    opacity: 0.8;
+    }
+
+/* FORMS */
+.form-group{ /* The div that hides labels and inputs*/
+    padding: 0.25rem 0;
+}
+
+/*Because my labels are inline I have to give them block element*/
+.form-group label{
+    display: block;
+}
+
+.form-control{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;  /*text area will remain same*/
+    border-radius: 5px;  
+}
+
+/* Container created to make h1 and ul stay in the middle of navbar */
+.container{
+    max-width: 1100px; /* Yani tam ekranda 100 px üstüne çıkamıycak. */
+    margin: 0 auto; /* Position center in full screen  */
+}

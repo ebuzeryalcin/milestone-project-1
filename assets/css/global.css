@@ -1,96 +1,72 @@
-/* text  */
-.text-center{
+/*
+.courses-button .course a{
+    color: red;
+    border: 1px solid chocolate;
+     padding: .70rem ;
+    font-size: 1rem;
     text-align: center;
-}
-
-.heading-small{
-
-font-size: 1.25rem;
-}
-.heading-medium{
-    font-size: 1.5rem;
-}
-.heading-big{
-    font-size: 1.75rem;
-}
-/*Colors*/
-.bg-dark-blue{
-    background:#062e51;
 
 }
-.bg-light-blue{
-    background: #336ea2;
+.courses-button .course a:hover{
+    color:#343a40;
+    border: 1px solid #343a40;
 }
-
-/*Buttons */
-.btn{
-    margin-top: .5rem;
-    padding: 0.8rem 3rem;
-    border-radius: 7px;
-    letter-spacing: 0.5px;
-    margin-bottom: .5rem;
-}
-
-.btn-primary{
-    background: #336ea2;
-    transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-}
-.btn-primary:hover{
-    color: #fff;
-    background: #00AEF0;
-}
-.btn-dark{
-    background: #333;
-}
-.btn-dark:hover{
-    color: #333;
-    background: #fff;
-    border: 0.5px solid #333;
+  
+.courses-button .course .course-image{
+margin-right: 0.5rem;
+position: relative;
+background-size: cover;
 
 }
 
-.btn-block{
-    width: 100%;
-    transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-}
 
-.btn-block:hover{
-    background-color: #00AEF0;
-    color: #fff;
-    opacity: 0.8;
+
+.courses-button .course .course-image img{
+border-radius: 35px;
+border: 1px solid #333;
+width: 100%;
+height: auto;
+    
+    }
+    .courses-button .course .course-image span {
+        background: red;
+        padding: 0.25rem;
+        color: #fff;
+        border-radius: 4px;
+        position: absolute; 
+        top: 15px;
+        left: 0;
     }
 
-/* FORMS */
 
-.form-group{ /* The div that hides labels and inputs*/
-    padding: 0.25rem 0;
+
+
+    .title{
+        letter-spacing: 1.2px;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+
+    .title-course{
+        letter-spacing: 1.2px;
+        margin-bottom: 0.25rem;
+        font-weight: 500;
+    }
+
+
+    .description-course{
+        letter-spacing: 1.2px;
+        margin-bottom: 0.25rem;
+        opacity: 0.8;
+    }
+
+    .instruction-course{
+        margin-bottom: 0.25rem;
+        opacity: 0.6;
+    }
+
+
+    */
+
     
-}
-/*Because my labels are inline I have to give them block element*/
-
-.form-group label{
-    display: block;
-}
-.form-control{
-width: 100%;
-padding: 0.4rem;
-font-size: 1rem;
-resize: none;  /*text area will remain same*/
-border-radius: 5px;  
-}
-
-/* Container created to make h1 and ul stay in the middle of navbar */
-
-.container{
-    max-width: 1100px; /* Yani tam ekranda 100 px üstüne çıkamıycak. */
-    margin: 0 auto; /* Position center in full screen  */
-    
-}
-
-

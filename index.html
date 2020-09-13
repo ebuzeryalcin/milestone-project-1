@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--<meta name="keyword" content="HTML,Python,Javascript,">-->
     <meta name="description" content="Ebuzer Yalcin | Software School" />  
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Links to css folders-->
     <link rel="stylesheet" href="assets/css/global.css"/>
@@ -27,14 +26,14 @@
     <!--To create navbar-->
     <header class="bg-dark-blue">
         <div class="container">
-            <nav id="navbar">
+            <nav id="navbar-styling">
                 <!--Sahyfanın en önemli başlığı H1 seo için önemli google bootları bu h1lere bakıcak daha sonra önem sıralrına göre h2 h3 h4 h h6 olarak devam edicek  -->
                 <h1 class="heading-small">Ebuzer YALCIN </h1>
-                <ul class="navbar-btn">
-                    <li class="button-style"><a href="#home">Home</a></li>
-                    <li class="button-style"><a href="#training">Education</a></li>
-                    <li class="button-style"><a href="#courses">Courses</a></li>
-                    <li class="button-style"><a href="#contact">Contact</a></li>
+                <ul class="navbar-btn-right">
+                    <li class="button-style-nav"><a href="#home-button">Home</a></li>
+                    <li class="button-style-nav"><a href="#education-button">Education</a></li>
+                    <li class="button-style-nav"><a href="#courses-button">Courses</a></li>
+                    <li class="button-style-nav"><a href="#contact-button">Contact</a></li>
 
                 </ul>
 
@@ -42,7 +41,7 @@
         </div>
     </header>
 
-    <section id="home">
+    <section id="home-button">
         <!--yeni html semantic etiketleri kullanmayı çalışıyoruz bu sayede bizim seomızda iyi olacak  -->
 
         <img src="assets/images/profile.png" alt="Butterfly" />
@@ -51,10 +50,10 @@
             <h2 class="heading-big">Ebuzer Yalcin</h2>
             <p>Senior Full Stack Developer</p>
         </div>
-        <a href="#courses" class="btn btn-primary"> Go to Courses</a>
+        <a href="#courses-button" class="btn btn-primary"> Go to Courses</a>
     </section>
 
-    <section id="training" class="bg-dark-blue">
+    <section id="education-button" class="bg-dark-blue">
         <h3 class="text-center heading-medium">Education Plan</h3>
         <ul class="items">
             <li class="item">
@@ -82,7 +81,7 @@
         </ul>
     </section>
     
-                        <!-- Button trigger modal -->
+<!--------------------------- Button trigger modal ----------------------->
 
 <!--------------------------------- Modal1 ------------------------------->
 
@@ -108,7 +107,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>
@@ -138,7 +136,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>
@@ -167,45 +164,16 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
   </div>
 </div>
     
-    <!--COURSES-->
-    <section id="courses">
+    <!------------------------COURSES----------------------------->
+
+    <section id="courses-button">
 
         <h3 class="text-center heading-medium" > Courses</h3>
-         <!--   <div class="container">
-            <div class="courses">
-            
-                COURSE 1
-                <div class="course">
-                    <div class="course-image">
-
-                        <img src="assets/images/html.jpg" alt="Python"  />
-                        <span>%50 Discount</span>
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            HTML, CSS, Javascript and Bootstrap 
-
-
-                        </div>
-                        <div class="description">
-                            Begin your journey with Front-End Development to become a Master
-                        </div>
-                        <div class="instruction">Ebuzer Yalcin</div>
-                        <div class="rating">4.8 <i class="far fa-star"></i> | (35.000 Votes)</div>
-                        <br>
-                       <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
-                        </button>
-
-                    </div>
-
-                </div> -->
 
                         <div class="row">
                     <div class="col-sm text-center">
@@ -221,37 +189,10 @@
                      <div class="instruction-course">Ebuzer Yalcin</div>
                      <div class="rating">4.8 <i class="far fa-star"></i> | (35.000 Votes)</div>
                     <span class="discount-span">%50 Discount</span> <br>
-                     <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->
                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1"><i class="fas fa-film"></i> Description 
                      </button>
                   </div>
                 </div>
-
-
-
-                <!--COURSE 2
-                <div class="course">
-                    <div class="course-image">
-
-                        <img src="assets/images/python.jpg" alt="Design" />
-                        <span>%60 Discount</span>
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            Python and MySQL
-
-                        </div>
-                        <div class="description">
-                            Getting started with MySQL in Python
-                        </div>
-                        <div class="instruction">Ebuzer Yalcin</div>
-                        <div class="rating">4.7 <i class="far fa-star"></i> | (25.000 Votes)</div>
-                         <br>
-                        <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
-                        </button>
-                    </div>
-                </div> -->
 
                 <div class="row">
                     <div class="col-sm text-center">
@@ -267,40 +208,10 @@
                      <div class="instruction-course">Ebuzer Yalcin</div>
                     <div class="rating">4.7 <i class="far fa-star"></i> | (25.000 Votes)</div>
                     <span class="discount-span">%60 Discount</span><br>
-                     <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->
                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal2"><i class="fas fa-film"></i> Description
                      </button>
                   </div>
                 </div>
-                
-                <!-- Course 3
-                <div class="course">
-                    <div class="course-image">
-
-                        <img src="assets/images/django2.jpg" alt="Graphic" />
-                        <span>%70 Discount</span>
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            Build and deploy rich web applications using Django
-
-                        </div>
-                        <div class="description">
-                            Learn the fundamentals of building a full-featured web site using Django
-                        </div>
-                        <div class="instruction">Ebuzer Yalcin</div>
-                        <div class="rating">4.4 <i class="far fa-star"></i> | (10.000 Votes)</div>
-                         <br>
-                      <!--<a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a> 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Description
-                        </button>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
 
                 <div class="row">
                     <div class="col-sm text-center">
@@ -316,17 +227,15 @@
                      <div class="instruction-course">Ebuzer Yalcin</div>
                      <div class="rating">4.4 <i class="far fa-star"></i> | (10.000 Votes)</div>
                      <span class="discount-span">%70 Discount</span><br>
-                     <!-- <a href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg" target="_blank" class="btn btn-secondary"> Go to Course</a>-->
                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal3"><i class="fas fa-film"></i> Description
                      </button>
                   </div>
                 </div>
-
-
     </section>
-    <!--CONTACT PART-->
 
-    <section id="contact" class="bg-dark-blue">
+    <!-------------------------------CONTACT PART---------------------------------->
+
+    <section id="contact-button" class="bg-dark-blue">
         <div class="contact-form">
         <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
             <h4 class="text-center heading-medium">Contact Us</h4>
@@ -357,36 +266,8 @@
 
             <button type="submit" class="btn btn-block">Send</button>
         </form>
-<!--
-        <ul class="social-links">
-            <li>
-                <a aria-label="This is a link to an external page called Facebook" target="_blank" href="http://www.facebook.com/">
-                <i class="fab fa-facebook" aria-hidden="true"></i></a>
-            </li>
-
-            <li>
-                <a aria-label="This is a link to an external page called Twitter" target="_blank" href="http://www.twitter.com/">
-                <i class="fab fa-twitter" aria-hidden="true"></i></a>
-            </li>
-
-            <li>
-                <a aria-label="This is a link to an external page called Instagram" target="_blank" href="http://www.instagram.com/">
-                <i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </li>
-
-            <li>
-                <a aria-label="This is a link to an external page called Youtube" target="_blank" href="http://www.youtube.com/">
-                <i class="fab fa-youtube" aria-hidden="true"></i></a>
-            </li>
-
-            <li>
-                <a aria-label="This is a link to an external page called Linkedin" target="_blank" href="http://www.linkedin.com/">
-                <i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-
-        </ul>
-        -->
         </div>
+
     </section>
     <!--FOOTER-->
     <div class="footer">
@@ -399,7 +280,7 @@
  <p>Ebuzer is a passionate Full Stack Developer with 5 years of professional experience in teaching programming. </p>
  <br>
 
- <div class="contact">
+ <div class="contact-button">
  <span><i class="fas fa-phone"></i> <a href="tel:+0892019100"> 0892019100</a></span>
  <br><br>
  <span><i class="fas fa-envelope"></i> <a href="mailto:soft@dev.edu">soft@dev.edu</a></span>
@@ -427,18 +308,15 @@
  <h2>Quick Links</h2>
  <br>
  <ul>
- <a href="#home"><li>Home</li></a>
- <a href="#training"><li>Education</li></a>
- <a href="#courses"><li>Courses</li></a>
- <a href="#contact"><li>Contact</li></a>
-
+ <a href="#home-button"><li>Home</li></a>
+ <a href="#education-button"><li>Education</li></a>
+ <a href="#courses-button"><li>Courses</li></a>
+ <a href="#contact-button"><li>Contact</li></a>
  
  </ul>
  </div>
 
-
  </div>
-
 
 <div class="footer-bottom">
 &copy; Designed by Ebuzer Yalcin | <a href="mailto:soft@dev.edu">soft@dev.edu</a>

@@ -1,5 +1,4 @@
-
-#navbar{
+#navbar-styling{
     flex-direction: column;
     padding-top: 0.5rem ;
     padding-bottom: 0.5rem;
@@ -8,11 +7,11 @@
     height: 90px; /*normalde 70 px vermiştik*/
 
 }
-#training .items{
+#education-button .items{
  flex-direction: column;
  height: 100vh;
 }
-#training .items .item{
+#education-button .items .item{
     width: 100%;
     height: 100vh;
 }
