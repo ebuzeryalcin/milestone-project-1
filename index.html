@@ -22,6 +22,8 @@
 </head>
 
 <body>
+    <!--Back to top button-->
+    <button onclick="topFunction()" id="back-to-top-button" title="Go to top">Back To Top</button>
 
     <!--To create navbar-->
     <header class="bg-dark-blue">
@@ -118,7 +120,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Introduction Video <i class="fas fa-video"></i></h5>
+        <h5 class="modal-title" id="example-Modal-LongTitle">Introduction Video <i class="fas fa-video"></i></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -146,7 +148,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Introduction Video <i class="fas fa-video"></i></h5>
+        <h5 class="modal-title" id="example-Modal-Long-Title">Introduction Video <i class="fas fa-video"></i></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -264,7 +266,7 @@
                 <textarea id="message" name="message" class="form-control" placeholder="Message..." style="height:200px" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-block">Send</button>
+            <button type="submit" class="btn btn-block-submit">Send</button>
         </form>
         </div>
 
@@ -323,6 +325,25 @@
 </div>
     </div>
 
+<!--Back to top Button script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("back-to-top-button");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     <!--This is Javascript to use Modal in Courses-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
